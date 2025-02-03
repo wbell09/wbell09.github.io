@@ -29,8 +29,9 @@
     		if(browserName.search("Android") >= 0)
 		  console.log("Do noting");
     		else
-		  src="jsApp.js";
-                  
+                 {
+		const element = document.getElementById("src");
+		element.src = "jsApp.js" 
             }
         });
   </script>
