@@ -8,11 +8,15 @@
 </head>
 <body>
     <h1>compose multiplatform web demo</h1>
-    <script type="text/javascript">
-    console.log(navigator.userAgent)</script>
     <div>
         <canvas id="ComposeTarget" width="800" height="600"></canvas>
     </div>
+    <script type="text/javascript">
+    console.log(navigator.userAgent);
+    let browserName = navigator.userAgent;
+    if(browserName.contains("Android")
+	console.log("Do noting");
+    else
     <script src="jsApp.js"> </script>
 </body>
 </html>
