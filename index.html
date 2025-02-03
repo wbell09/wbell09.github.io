@@ -11,12 +11,14 @@
     <div>
         <canvas id="ComposeTarget" width="800" height="600"></canvas>
     </div>
-    <script type="text/javascript"
+    <script type="text/javascript">
     console.log(navigator.userAgent);
     let browserName = navigator.userAgent;
-    if(browserName.search("Android") > -1)
+    if(browserName.search("Android") == -1)
 	console.log("Do noting");
-    else
-    src="jsApp.js"> </script>
+    else{
+	document.getElementById("jsApp.js").setAttribute("src", this.innerHTML);
+    }
+   </script>
 </body>
 </html>
