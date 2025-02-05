@@ -2,26 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>compose multiplatform web demo</title>
-    <script src="skiko.js"> </script>
-    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMPProject</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <script type="application/javascript" src="composeApp.js"></script>
 </head>
 <body>
-    <h1>compose multiplatform web demo</h1>
-    <div>
-        <canvas id="ComposeTarget" width="800" height="600"></canvas>
-    </div>
-    <script>
-    var head = document.getElementsByTagName('head')[0];
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    let browserName = navigator.userAgent;
-    if(browserName.indexOf("Android")==-1) {
-    script.src = 'jsApp.js';
-    } else {
-    script.src = 'wasmJsApp.js';
-    }
-    document.head.appendChild(script);
-    </script>
 </body>
 </html>
