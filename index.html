@@ -11,16 +11,24 @@
     <div>
         <canvas id="ComposeTarget" width="800" height="600"></canvas>
     </div>
-    <script type="text/javascript">
-    console.log(navigator.userAgent);
+    <script>
+    var head = document.getElementsByTagName('head')[0];
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
     let browserName = navigator.userAgent;
-    var scriptFile = "wasmJsApp.js";
-    if(browserName.indexOf("Android")==-1)
-	    scriptFile = "jsApp.js"
-    else{
-    	src="jsApp.js";
+    if(browserName.indexOf("Android")==-1) {
+    script.src = 'wasmJsApp.js';
+    } else {
+    script.src = 'jsApp.js';
     }
+    head.appendChild(script);
     </script>
-    <script src=scriptFile> </script>
+    <script>
+        function myWasmFunction() {
+          var x = document.getElementById("wasmJsApp").src;
+          document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+
 </body>
 </html>
