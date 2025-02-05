@@ -15,25 +15,11 @@
     console.log(navigator.userAgent);
     let browserName = navigator.userAgent;
     if(browserName.search("Android") >= 0)
-	console.log("Do noting");
+	    console.log("Do noting");
     else{
-	document.getElementById("jsApp.js").setAttribute("src", this.innerHTML);
+    	document.getElementById("jsApp.js").setAttribute("src", this.innerHTML);
     }
-  </script>
-  <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const myElement = document.getElementById("jsApp.js");
-            if (myElement) {
-    	      	console.log(navigator.userAgent);
-    		let browserName = navigator.userAgent;
-    		if(browserName.search("Android") >= 0)
-		  console.log("Do noting");
-    		else
-                 {
-		const element = document.getElementById("src");
-		element.src = "jsApp.js" 
-            }
-        });
+
   </script>
 </body>
 </html>
