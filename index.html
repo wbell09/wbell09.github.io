@@ -17,9 +17,9 @@
     script.type = 'text/javascript';
     let browserName = navigator.userAgent;
     if(browserName.indexOf("Android")==-1) {
-    script.src = 'wasmJsApp.js';
-    } else {
     script.src = 'jsApp.js';
+    } else {
+    script.src = 'wasmJsApp.js';
     }
     head.appendChild(script);
     </script>
