@@ -14,10 +14,10 @@
     <script type="text/javascript">
     console.log(navigator.userAgent);
     let browserName = navigator.userAgent;
-    if(browserName.search("Android") >= 0)
-	    console.log("Do noting");
+    if(browserName.indexOf("Android")==-1)
+	    console.log("Load wasm");
     else{
-    	document.getElementById("jsApp.js").setAttribute("src", this.innerHTML);
+    	console.log("Load js");
     }
 
   </script>
