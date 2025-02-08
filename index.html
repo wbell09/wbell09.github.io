@@ -2,11 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple2</title>
-    <link type="text/css" rel="stylesheet" href="styles.css">
-    <script type="application/javascript" src="composeApp.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+              "@js-joda/core": "./@js-joda/core/dist/js-joda.esm.js"
+            }
+        }
+    </script>
+    <script type="application/javascript" src="skiko.js"></script>
+    <script type="module" src="load.mjs"></script>
 </head>
 <body>
+<canvas id="ComposeTarget"></canvas>
+<div id="warning">
+    ⚠️ This page using <b>experimental Kotlin/Wasm</b> requires.
+    <ul>
+        <li>Chrome version >= 119, or</li>
+        <li>Firefox version >= 120</li>
+    </ul>
+</div>
 </body>
 </html>
