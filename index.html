@@ -2,24 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script type="importmap">
-        {
-            "imports": {
-              "@js-joda/core": "./@js-joda/core/dist/js-joda.esm.js"
-            }
-        }
-    </script>
-    <script type="application/javascript" src="skiko.js"></script>
-    <script type="module" src="load.mjs"></script>
+    <script src="skiko.js"></script>
 </head>
 <body>
-<canvas id="ComposeTarget"></canvas>
-<div id="warning">
-    ⚠️ This page using <b>experimental Kotlin/Wasm</b> requires.
-    <ul>
-        <li>Chrome version >= 119, or</li>
-        <li>Firefox version >= 120</li>
-    </ul>
-</div>
+<canvas id="ComposeTarget" width="1" height="1"></canvas>
+<script src="app.js"></script>
 </body>
 </html>
