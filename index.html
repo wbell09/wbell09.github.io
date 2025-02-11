@@ -15,7 +15,7 @@
 <canvas id="ComposeTarget"></canvas>
 <script type="text/javascript">
     console.log("appName:"+navigator.platform);
-    var src = navigator.platform.includes("Android") ? "wasm/composeApp.js" : "js/composeApp2.js";
+    var src = navigator.platform.includes("Android") ? "wasm/composeApp.js" : "js/composeApp.js";
     var script = document.createElement("script");
     script.setAttribute("src", src);
     document.getElementsByTagName("head")[0].appendChild(script);
