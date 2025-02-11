@@ -2,11 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wizard</title>
-    <link type="text/css" rel="stylesheet" href="styles.css">
-    <script type="application/javascript" src="composeApp.js"></script>
+    <title>PrayerTimes Multiplatform</title>
+    <script src="skiko.js"> </script>
 </head>
 <body>
+<canvas id="ComposeTarget"></canvas>
+<script type="text/javascript">
+    console.log("appName:"+navigator.appName);
+    console.log("appName:"+navigator.userAgent);
+    var src = navigator.userAgent.includes("Android") ? "composeWasmApp.js" : "composeApp.js";
+    var script = document.createElement("script");
+    script.setAttribute("src", src);
+    document.getElementsByTagName("head")[0].appendChild(script);
+</script>
 </body>
 </html>
