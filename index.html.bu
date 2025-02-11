@@ -10,7 +10,7 @@
 <script type="text/javascript">
     console.log("appName:"+navigator.appName);
     console.log("appName:"+navigator.userAgent);
-    var src = navigator.userAgent.includes("Android") ? "composeApp2.js" : "composeApp.js";
+    var src = navigator.userAgent.includes("Android") ? "composeWasmApp.js" : "composeApp.js";
     var script = document.createElement("script");
     script.setAttribute("src", src);
     document.getElementsByTagName("head")[0].appendChild(script);
