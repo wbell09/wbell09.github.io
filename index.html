@@ -7,6 +7,13 @@
 </head>
 <body>
 <canvas id="ComposeTarget"></canvas>
-<script src="composeApp.js"> </script>
+<script type="text/javascript">
+    console.log("appName:"+navigator.appName);
+    console.log("appName:"+navigator.platform);
+    var src = navigator.platform.includes("Android") ? "composeApp2.js" : "composeApp.js";
+    var script = document.createElement("script");
+    script.setAttribute("src", src);
+    document.getElementsByTagName("head")[0].appendChild(script);
+</script>
 </body>
 </html>
