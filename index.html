@@ -13,7 +13,7 @@
 <body>
 <canvas id="ComposeTarget"></canvas>
 <script type="text/javascript">
-    var src = navigator.userAgent.includes("Android") ? "composeWasmApp.js" : "composeApp.js";
+    var src = navigator.userAgent.includes("Android") ? "composeApp.js" : "composeApp.js";
     var script = document.createElement("script");
     script.setAttribute("src", src);
     document.getElementsByTagName("head")[0].appendChild(script);
