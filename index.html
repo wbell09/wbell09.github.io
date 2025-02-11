@@ -3,22 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>PrayerTimes Multiplatform</title>
-<script type="text/javascript">
-    console.log("appName:"+navigator.platform);
-    var src = navigator.platform.includes("Android") ? "js/skiko.js" : "wasm/skiko.js";
-    var script = document.createElement("script");
-    script.setAttribute("src", src);
-    document.getElementsByTagName("head")[0].appendChild(script);
-</script>
+    <script src="skiko.js"> </script>
 </head>
 <body>
 <canvas id="ComposeTarget"></canvas>
-<script type="text/javascript">
-    console.log("appName:"+navigator.platform);
-    var src = navigator.platform.includes("Android") ? "js/composeApp.js" : "wasm/composeApp.js";
-    var script = document.createElement("script");
-    script.setAttribute("src", src);
-    document.getElementsByTagName("head")[0].appendChild(script);
-</script>
+<script src="composeApp.js"> </script>
 </body>
 </html>
