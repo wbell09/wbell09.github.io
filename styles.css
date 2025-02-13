@@ -6,10 +6,4 @@ body {
   height: 100%;
 }
 
-body {
-  border: 1px solid black;
-
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
