@@ -1,12 +1,11 @@
 html{
     width: 100%;
     height: 100%;
-}, body {
+}, 
+body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
-}
-.my-element {
-  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
 }
