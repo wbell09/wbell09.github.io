@@ -12,7 +12,10 @@
         script.setAttribute("src", src);
         document.getElementsByTagName("head")[0].appendChild(script);
     </script>
-
+    <script>
+       const topPosition = window.screenTop;
+       console.log("Top position:", topPosition);
+    </script>
 </head>
 <body>
 <canvas id="ComposeTarget"></canvas>
