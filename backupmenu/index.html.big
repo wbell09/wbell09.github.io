@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>wbell09</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <script src=""></script>
+    <script type="text/javascript">
+        var src = navigator.userAgent.includes("Android") ? "" : "skiko.js" ;
+        var script = document.createElement("script");
+        script.setAttribute("src", src);
+        document.getElementsByTagName("head")[0].appendChild(script);
+    </script>
+    <script>
+       const topPosition = window.screenTop;
+       console.log("Top position:", topPosition);
+    </script>
+</head>
+<body>
+<div id="root" style="z-index: 1"></div>
+    <!--canvas id="ComposeTarget"></canvas-->
+<!--script type="text/javascript">
+    var id = navigator.userAgent.includes("Android") ? "ComposeTarget":"";
+    var canvas = document.createElement("canvas");
+    canvas.setAttribute("id", id);
+    document.getElementsByTagName("head")[0].appendChild(canvas);
+</script-->
+<script type="text/javascript">
+    var src = navigator.userAgent.includes("Android") ? "composeWasmApp.js" : "composeApp.js";
+    var script = document.createElement("script");
+    script.setAttribute("src", src);
+    document.getElementsByTagName("head")[0].appendChild(script);
+</script>
+    <canvas id="ComposeTarget" width="800" height="600"></canvas>
+</body>
+</html>
