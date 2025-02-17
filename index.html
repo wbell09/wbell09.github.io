@@ -19,12 +19,13 @@
 </head>
 <body>
     <div id="root"></div>
-<script type="text/javascript">
+    <canvas id="ComposeTarget" width=100% height=100%></canvas>
+<!--script type="text/javascript">
     var id = navigator.userAgent.includes("Android") ? "" : "ComposeTarget";
     var canvas = document.createElement("canvas");
     canvas.setAttribute("id", id);
     document.getElementsByTagName("head")[0].appendChild(canvas);
-</script>
+</script-->
 <script type="text/javascript">
     var src = navigator.userAgent.includes("Android") ? "composeWasmApp.js" : "composeApp.js";
     var script = document.createElement("script");
