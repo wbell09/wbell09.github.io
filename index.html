@@ -8,6 +8,12 @@
 </head>
 <body>
 <canvas id="ComposeTarget"></canvas>
-<script src="composeApp.js"> </script>
+<script src="composeWasmApp.js"></script>
+<script type="text/javascript">
+    var src = navigator.userAgent.includes("Android") ? "composeWasmApp.js" : "composeApp.js";
+    var script = document.createElement("script");
+    script.setAttribute("src", src);
+    document.getElementsByTagName("head")[0].appendChild(script);
+</script>
 </body>
 </html>
